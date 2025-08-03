@@ -65,7 +65,7 @@ builder.Services.AddSwaggerGen(c =>
 //Docker
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(8080);
+    options.ListenAnyIP(5001);
 });
 
 // 🔑 JWT Auth
