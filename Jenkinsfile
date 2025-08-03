@@ -26,7 +26,7 @@ pipeline {
         }
         stage('Run Docker') {
             steps {
-                sh 'docker run -d -p 5001:80 customers-api'
+                sh 'docker run -d -p 5002:80 customers-api'
             }
         }
     }
