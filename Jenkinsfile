@@ -7,6 +7,12 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/ManiacThird/customers-api.git'
             }
         }
+        
+        stage('Check .NET Version') {
+            steps {
+                sh 'dotnet --version'
+            }
+        }
 
         stage('Build') {
             steps {
